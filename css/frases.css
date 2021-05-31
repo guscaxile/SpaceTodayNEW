@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(192, 159, 223);
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: rgba(25, 20, 41, 255);
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid rgb(37, 150, 190);
+}
+
+.caixa {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho img {
+    width: 180px;
+    float: left;
+}
+
+.cabecalho nav {
+    float: right;
+}
+
+nav {
+    margin-top: 0.5%;
+}
+
+.list_modify {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: rgb(37, 150, 190);
+}
+
+.list_modify:hover {
+    color: rgb(192, 159, 223);
+}
+
+ul {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: medium;
+    border-bottom: 0px rgba(255, 255, 0, 0);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* MEIO */
+
+.botao1 {
+    display: inline;
+    margin-left: auto;
+    font-size: 25px;
+    color: rgb(216, 208, 226);
+    background-color: rgba(37, 149, 190, 0.753);
+    margin: 20px 0px 100px 0px;
+    border: 0px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.all_botoes{
+    display: inline;
+    padding: 0px 0px 0px 103px;
+}
+
+.botao {
+    margin-left: 25px;
+    font-size: 15px;
+    color: rgb(216, 208, 226);
+    background-color: rgba(37, 149, 190, 0.753);
+    margin: 32px 37px 100px 6px;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}

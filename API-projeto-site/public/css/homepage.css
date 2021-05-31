@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* MEIO */
+
+.img_fundo {
+    background-image: url('https://acegif.com/wp-content/gif/outerspace-58.gif');
+    background-size: cover;
+    height: 80%;
+    background-repeat: no-repeat;
+}
+
+.frase_meio img {
+    width: 800px;
+    padding-bottom: 5%;
+    border: 20px black;
+}
+
+.div_spacetoday {
+    text-align: center;
+    padding-top: 250px;
+}
+
+.botao {
+    font-size: 25px;
+    color: rgb(216, 208, 226);
+    background-color: rgba(37, 149, 190, 0.753);
+    margin: 20px 0px 100px 0px;
+    border: 0px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+button:hover {
+    background-color: rgb(122, 21, 206);
+}
