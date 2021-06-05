@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo simbolo.png">
+    <link rel="stylesheet" href="css/dash.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+        integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+        crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <div class="cabecalho">
+        <div class="caixa">
+            <span>
+                <img src="img/logotipo.png" alt="Logotipo">
+            </span>
+            <nav>
+                <ul>
+                    <li class="list_modify"><a href="usuario.html">COLISÃO</a></li>
+                    <li class="list_modify"><a href="frases.html">FRASES</a></li>
+                    <li class="list_modify"><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li class="list_modify"><a href="" style="color: rgb(192, 159, 223);">DASHBOARD</a></li>
+                    <li class="list_modify"><a href="login.html">SAIR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MEIO -->
+
+    <div class="caixa">
+        <h1>Alguns dados</h1>
+        <p>O real intuito desses dados é mostrar que a astronomia é um assunto pouco abordado, apesar de necessário.</p>
+    </div>
+
+    <div class="container">
+        <div class="caixa_grafico">
+            <p class="frase">Sabem o que significa astronomia.</p>
+            <div class="graficos">
+                <div class="ctx3">
+                    <canvas id="dados"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="caixa_grafico">
+            <p class="frase">Grau de conhecimento do tema</p>
+            <div class="graficos">
+                <div class="ctx2">
+                    <canvas id="dados2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="caixa_grafico">
+            <p class="frase">Atrônomos famosos que conhecem</p>
+            <div class="graficos">
+                <div class="ctx1">
+                    <canvas id="dados3"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="caixa_grafico">
+            <p class="frase">Elementos do universo que conhecem</p>
+            <div class="graficos">
+                <div class="ctx">
+                    <canvas id="dados4"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+        <div class="box_rodape">
+            <img class="logo_top" src="img/logo simbolo.png" alt="logo">
+            <div class="copyright">
+                <span>Space Today - Copyright © 2021</span>
+            </div>
+            <img class="logo_site" src="img/logo simbolo.png" alt="logo">
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    var ctx3 = dados.getContext('2d');
+    var myChart = new Chart(ctx3, {
+        type: 'pie',
+        data: {
+            labels: ['Sabem', 'Não Sabem'],
+            datasets: [{
+                label: '',
+                data: [78.6, 21.4],
+                backgroundColor: [
+                    '#460259',
+                    '#1F8DA6',
+                ],
+                borderWidth: 1,
+                borderColor: 'rgba(0, 0, 0, 0.644)'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart.js Pie Chart'
+            },
+        }
+    });
+
+    var ctx2 = dados2.getContext('2d');
+    var myChart = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: ['Básico', 'Moderado', 'Alto'],
+            datasets: [{
+                label: '',
+                data: [69.2, 23.1, 7.7],
+                /* Valores / dados*/
+                backgroundColor: [
+                    '#CC44F2',
+                    '#1F8DA6',
+                    '#460259',
+                ],
+                borderWidth: 1,
+                borderColor: 'rgba(0, 0, 0, 0.644)'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart.js Pie Chart'
+            },
+        }
+    });
+
+    var ctx1 = dados3.getContext('2d');
+    var myChart = new Chart(ctx1, {
+        type: 'pie',
+        data: {
+            labels: ['Galilei', 'Sagan', 'Copérnico', 'deGrasse Tyson', 'Newton'],
+            datasets: [{
+                label: '',
+                data: [3, 1, 2, 1, 1],
+                /* Valores / dados*/
+                backgroundColor: [
+                    '#CC44F2',
+                    '#1F8DA6',
+                    '#460259',
+                    '#580AA6',
+                    '#0A1926',
+                ],
+                borderWidth: 1,
+                borderColor: 'rgba(0, 0, 0, 0.644)'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart.js Pie Chart'
+            },
+        }
+    });
+
+    var ctx = dados4.getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Estrelas', 'Planetas', 'Luas', 'Galáxias', 'Asteróides'],
+            datasets: [{
+                label: '',
+                data: [5, 3, 4, 2, 1],
+                /* Valores / dados*/
+                backgroundColor: [
+                    '#CC44F2',
+                    '#1F8DA6',
+                    '#460259',
+                    '#580AA6',
+                    '#0A1926',
+                ],
+                borderWidth: 1,
+                borderColor: 'rgba(0, 0, 0, 0.644)'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart.js Pie Chart'
+            },
+        }
+    });
+</script>

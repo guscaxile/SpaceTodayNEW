@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo simbolo.png">
     <link rel="stylesheet" href="css/frases.css">
+    <script src="js/frases.js"></script>
     <title>Frases</title>
 </head>
 
@@ -21,10 +22,11 @@
             </span>
             <nav>
                 <ul>
-                    <li class="list_modify"><a href="index.html">HOME</a></li>
-                    <li class="list_modify"><a href="universe.html">UNIVERSO</a></li>
-                    <li class="list_modify"><a href="sobre.html">SOBRE</a></li>
-                    <li class="list_modify"><a href="login.html">LOGIN</a></li>
+                    <li class="list_modify"><a href="usuario.html">COLISÃO</a></li>
+                    <li class="list_modify"><a href="" style="color: rgb(192, 159, 223);">FRASES</a></li>
+                    <li class="list_modify"><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li class="list_modify"><a href="dash.html">DASHBOARD</a></li>
+                    <li class="list_modify"><a href="login.html">SAIR</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +40,8 @@
             <p>Você conhece algum astrônomo? O cosmos é fascinante, e na maioria das vezes, os cientistas expressam sua
                 encantação com frases que ultrapassam gerações.
                 <br><br>
-                Abaixo você encontra alguns botões, no qual contém o nome de alguns cientistas. Clique e veja as falas que transcenderam o grande Cosmos.</p>
+                O mini sorteador funciona da seguinte forma, você clica no nome de um cientista e ele sorteia uma frase
+                aleatória.</p>
         </div>
     </div>
     <div class="all_botoes">
@@ -72,50 +75,23 @@
         </a>
     </div>
 
-    <div id="div_msg" style="text-align: center; font-size: larger;"></div>
-    <img id="img_filosofo" src="" alt="" style="width: 200px; padding: 15px 0px 0px 550px;">
-    
+    <div class="caixa_frases">
+        <div id="div_msg" style="text-align: center; font-size: larger; margin: 25px 0; padding: 25px 25px;"></div>
+        <img id="img_filosofo" src="" alt="" style="width: 200px; padding: 15px 0px 30px 145px;">
+    </div>
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+        <div class="box_rodape">
+            <img class="logo_top" src="img/logo simbolo.png" alt="logo">
+            <div class="copyright">
+                <span>Space Today - Copyright © 2021</span>
+            </div>
+            <img class="logo_site" src="img/logo simbolo.png" alt="logo">
+        </div>
+    </footer>
 
 </body>
 
 </html>
-
-<script>
-
-    function galileu(){
-
-        div_msg.innerHTML = 'Amei tanto as estrelas que não precisei ter medo da noite.';
-        img_filosofo.src = "img/galileugalilei.jpg"
-    }
-
-    function einstein(){
-
-        div_msg.innerHTML = 'No meio da dificuldade encontra-se a oportunidade.';
-        img_filosofo.src = "img/einstein.jpg"
-    }
-
-    function newton(){
-
-        div_msg.innerHTML = 'Se eu vi mais longe, foi por estar sobre ombros de gigantes.';
-        img_filosofo.src = "img/newton.jpg"
-    }
-
-    function sagan(){
-
-        div_msg.innerHTML = 'Para criaturas pequenas como nós, a vastidão só é suportável por meio do amor.';
-        img_filosofo.src = "img/carlsagan.jpeg"
-    }
-
-    function copernico(){
-
-        div_msg.innerHTML = 'A sabedoria da natureza é tal que não produz nada de supérfluo ou inútil.';
-        img_filosofo.src = "img/copernico.jpg"
-    }
-
-    function bruno(){
-
-        div_msg.innerHTML = 'Não é a matéria que causa o pensamento, mas o pensamento que causa a matéria.';
-        img_filosofo.src = "img/bruno.jpg"
-    }
-
-</script>

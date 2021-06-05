@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #161616;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: rgba(25, 20, 41, 255);
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid rgb(122, 21, 206);
+}
+
+.caixa {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho img {
+    width: 180px;
+    float: left;
+}
+
+.cabecalho nav {
+    float: right;
+}
+
+nav {
+    margin-top: 0.5%;
+}
+
+.list_modify {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: rgb(122, 21, 206);
+}
+
+.list_modify:hover {
+    color: rgb(192, 159, 223);
+}
+
+ul {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: medium;
+    border-bottom: 0px rgba(255, 255, 0, 0);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+/* MEIO */
+
+.caixa{
+    color: rgb(255, 255, 255);
+}
+
+.grafico_personagem{
+    width: 150px;
+    height: 150px;
+}
+
+.graficos{
+    width: 400px;
+    padding: 25px 110px;
+}
+
+.frase{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: large;
+    padding: 15px 0;
+}
+
+.caixa_grafico{
+    background-color: rgb(192, 189, 189);
+    width: 600px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 2%;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 2%;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: rgba(25, 20, 41, 255);
+    color: #ecf0f1;
+    width: 100%;
+    height: 90px;
+    float: left;
+    border-top: 5px solid rgb(122, 21, 206);
+}
+
+.box_rodape {
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.logo_top {
+    height: 80px;
+    float: left;
+}
+
+.copyright {
+    text-align: center;
+    float: left;
+    width: 300px;
+    height: 50px;
+    margin-left: 29.5%;
+    margin-top: 35px;
+}
+
+.logo_site {
+    height: 80px;
+    float: right;
+}
